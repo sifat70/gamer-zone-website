@@ -1,0 +1,11 @@
+/* responsive with mobile device */
+
+@media screen and (max-width: 576px) {
+    .nav-container,
+    .nav-items-container ul{
+        flex-direction: column;
+    }
+    .nav-items-container li{
+        padding-right: 15px;
+    }
+}
