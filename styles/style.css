@@ -173,6 +173,51 @@ a{
     width: 100%;
 }
 /* banner section end */
+/* We are gamer section */
+.we-are-gamer-section{
+    background: linear-gradient(90deg, rgba(255, 66, 165, 0.03) 0%, rgba(255, 66, 165, 0.03) 100%);
+}
+.we-are-gamer-container{
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content: space-between;
+    align-items: center;
+    max-width: var(--container-width);
+    margin: var(--container-margin);
+    padding: 80px 0px;
+    gap: 40px;
+}
+.we-are-gamer-content{
+    width: 40%;
+    text-align: right;
+}
+.we-are-gamer-content h3{
+    margin-bottom: 24px;
+}
+.we-are-gamer-content button{
+    margin-top: 32px;
+    margin-bottom: 24px;
+}
+.caption-title p{
+    color: var(--primary-text-color);
+    font-size: 20px;
+    font-weight: 500;
+    line-height: 45px;
+}
+.caption-title h4{
+    color: var(--primary-text-color);
+    font-size: 24px;
+    font-weight: 700;
+    line-height: 45px;
+}
+
+.we-are-gamer-img{
+    width: 60%;
+}
+.we-are-gamer-img img{
+    width: 100%;
+}
+/* end we are gamer section */
 /* online games start*/
 .games-funny-videos{
     max-width: var(--container-width);
