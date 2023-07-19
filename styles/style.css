@@ -350,6 +350,7 @@ a{
     align-items: center;
     justify-content: space-between;
     width: 200px;
+    transition: border 1s;
 }
 .btn-game-link p{
     color: #0B0223;
