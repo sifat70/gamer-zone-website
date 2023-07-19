@@ -74,4 +74,22 @@
         width: 150px;
     }
     /* hero section end */
+
+    /* footer section start */
+    .footer-container{
+        padding: 40px;
+    }
+    .footer-menu{
+        flex-wrap: wrap;
+    }
+    .footer-menu li{
+        margin-top: 20px;
+        margin-bottom: 20px;
+        margin-left: 0px;
+        margin-right: 0px;
+    }
+   .social-icon img{
+        margin: 10px;
+    }
+    /* end footer section */
 }

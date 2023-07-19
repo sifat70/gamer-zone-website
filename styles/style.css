@@ -284,3 +284,54 @@ a{
     color: #FF42A5;
 }
 /* game link section start */
+
+/* Footer section start */
+.footer-section{
+    display: flex;
+    justify-content: center;
+    background: #0B0223;
+    color: #fff;
+}
+.footer-container{
+    padding:100px 0px;
+    max-width: 1120px;
+    margin:var(--container-margin);
+    text-align: center;
+}
+.footer-container .logo{
+    display: flex;
+    justify-content: center;
+}
+.footer-container .logo img{
+    margin-right: 20px;
+}
+.footer-container .logo h2{
+    font-size: 45px;
+    font-weight: 700;
+}
+.footer-container .logo h2 span{
+    color: #ff42a5;
+}
+.footer-menu{
+    display: flex;
+    justify-content: space-between;
+}
+.footer-menu li{
+    list-style: none;
+    margin-left: 50px;
+    margin-top: 50px;
+    margin-bottom: 50px;
+}
+.footer-menu li a{
+    color: #fff;
+    font-size: 16px;
+}
+.social-icon img{
+    margin-left: 30px;
+}
+.terms-and-condition-menu li a,.footer-container p{
+    color: rgba(255, 255, 255, 0.60);
+    font-size: 16px;
+    font-weight: 500;
+}
+/* Footer section end */
