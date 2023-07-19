@@ -197,14 +197,50 @@ a{
 }
 .video-box{
     width: 258px;
+    position: relative;
 }
 .video-box img{
     width: 100%;
+}
+.video > img:hover{
+    border: 3px solid #FF42A5;
+    border-radius: 12px;
 }
 .video-box .video-caption{
     font-size: 16px;
     color: var(--primary-text-color);
     text-align: left;
+}
+.overlay-watch-icon{
+    position: absolute;
+    display: none;
+    top: 100px;
+    /* left: 10px;
+    height: 200px;
+    width: 100%; */
+    border-radius: 10px;
+    
+}
+.overlay-watch-icon img{
+    width: 64px;
+    height: 64px;
+    border-radius: 50%;
+}
+.overlay-watch-icon p{
+    color: #FF42A5;
+    font-weight: bold;
+}
+
+.video-box:hover .overlay-watch-icon{
+    display: block;
+    width: 100%;
+    height: 75%;
+    cursor: pointer;
+    background-color: #00000070;
+    margin-top: -100px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
 /* online game end */
 

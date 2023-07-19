@@ -93,3 +93,14 @@
     }
     /* end footer section */
 }
+
+
+
+
+/* tablet responsive */
+@media screen and (max-width: 768px){
+    /* Header nav menu styles */
+    .banner-container{
+        padding: 20px 40px;
+    }
+}
