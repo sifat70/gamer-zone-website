@@ -361,6 +361,8 @@ a{
     border-radius: 50px;
     border: 2px solid #FF42A5;
     cursor: pointer;
+    padding: 8px 8px;
+    padding-right: 18px;
 }
 .btn-game-link:hover p{
     color: #FF42A5;
