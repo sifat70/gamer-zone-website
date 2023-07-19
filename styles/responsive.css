@@ -65,7 +65,7 @@
 
     /* hero section start */
     .hero-section{
-        padding: 0px 40p
+        padding: 0px 40px;
     }
     .hero-content,.hero-img{
         width: 100%;
@@ -117,9 +117,21 @@
 
 
 /* tablet responsive */
-@media screen and (max-width: 768px){
+@media screen and (min-width: 425px) and (max-width: 992px){
     /* Header nav menu styles */
+    .banner-section{
+        width: 100%;
+    }
     .banner-container{
+        
         padding: 20px 40px;
+    }
+    .btn-group{
+        display: flex;
+        gap: 10px;
+    }
+    .we-are-gamer-container{
+        width: 100%;
+        padding: 30px;
     }
 }
