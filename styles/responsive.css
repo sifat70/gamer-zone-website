@@ -124,6 +124,10 @@
 /* tablet responsive */
 @media screen and (min-width: 425px) and (max-width: 992px){
     /* Header nav menu styles */
+    .nav-container{
+        flex-direction: column;
+        gap: 10px;
+    }
     .banner-section{
         width: 100%;
     }
