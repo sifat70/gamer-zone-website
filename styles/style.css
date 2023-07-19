@@ -1,78 +1,209 @@
-/* work sans font from google fonts */
-@import url('https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,400;0,700;1,400&family=Open+Sans:wght@400;700;800&family=Work+Sans:wght@400;500;600;700;800&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Work+Sans:wght@200;300;400;500;600;700;800&display=swap');
+/* Global Styles */
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
 
-/* shared styles */
-* {
-    font-family: 'Lato', sans-serif;
-    font-family: 'Open Sans', sans-serif;
+/* Shared Styles */
+body{
     font-family: 'Work Sans', sans-serif;
+    font-size: 18px;
 }
-/* navbar start */
+:root{
+    --linear: #FF42A5;
+    --btn-sea-blue: #4EC5F7;
+    --container-margin: 0 auto;
+    --primary-font-size: 20px;
+    --primary-text-color: #534C64;
+    --secondary-text-color: #3C354F;
+    --container-width: 1024px;
+    /* --container-width: 1440px; */
+}
+a{
+    text-decoration: none;
+    font-size: var(--primary-font-size);
+}
+.btn-primary, .btn-sea-blue{
+    padding: 20px 40px;
+    color: #FFF;
+    font-size: 20px;
+    font-weight: 600;
+    text-transform: uppercase;
+    border-radius: 48px;
+    background: var(--linear);
+    border: none;
+    transition: 0.5s;
+    cursor: pointer;
+}
+.btn-primary:hover,.btn-sea-blue:hover{
+    opacity: 0.7;
+}
+.btn-sea-blue{
+    border-radius: 48px;
+    background: var(--btn-sea-blue);
+    
+}
+.text-gradient{
+    background: linear-gradient(180deg, #F948B2 0%, #8758F1 100%);
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+.section-title{
+    color: #0B0223;
+    font-size: 36px;
+    font-weight: 700;
+}
+
+
+/* nav section styles start */
+
+.header-nav-container{
+    padding-top: 37px;
+    padding-bottom: 37px;
+    background: #FFF;
+    box-shadow: 0px 4px 30px 0px rgba(0, 0, 0, 0.05);
+}
 .nav-container{
+    max-width: var(--container-width);
+    margin: var(--container-margin);
     display: flex;
+    justify-content: space-between;
     align-items: center;
-    max-width: 1400px;
-    margin: 0 auto;
-    height: 130px;
-    flex-shrink: 0;
 }
-.logo-container{
+.nav-container .logo{
     display: flex;
-    align-items: center;
-    width: 50%;
-    justify-content: center;
-    margin: 0 auto;
+    vertical-align: center;
 }
-.logo-container img{
-    width: 86.041px;
-    height: 40px;
-    padding-right: 10px;
+.nav-container .logo img{
+    margin-right: 20px;
 }
-.logo-title-g{
-    color: #ff006e;
-}
-.logo-container p{
-    text-align: center;
+.nav-container .logo h2{
     font-size: 45px;
     font-weight: 700;
 }
-.nav-items-container{
-    width: 50%;
+.nav-container .logo h2 > span{
+    color: var(--linear);
 }
-.nav-items-container ul{
+
+.nav-menu{
     display: flex;
-    gap: 50px;
     align-items: center;
 }
-.nav-items-container li{
+.nav-menu li{
     list-style: none;
-    text-align: center;
-    font-size: 18px;
-    font-weight: 500;
+    margin-left: 30px;
 }
-.nav-items-container a{
-    text-decoration: none;
-    color: black;
+.nav-menu li a{
+    color: var(--secondary-text-color);
 }
-.nav-items-container i{
-    letter-spacing: 5px;
-    padding-left: 10px;
-}
-.nav-items-container #red{
-    color: red;
-}
-.spesial-nav{
-    width: 200px;
-    height: 30px;
-    flex-shrink: 0;
-    text-align: center;
-    display: flex;
-    align-items: center;
+.nav-menu .flow-us-btn{
     border-radius: 8px;
-    padding: 18px;
     background: rgba(11, 2, 35, 0.10);
+    padding: 17px 24px;
 }
-/* navbar end */
+.nav-menu .flow-us-btn a .fa-youtube{
+    color: #F61C0D;
+}
+.nav-menu .flow-us-btn a .fa-tiktok{
+    color: #000;
+    outline-color: #08FFF9;
+}
+/* nav section styles start */
 
 /* banner section start */
+.banner-section{
+    background-image: url('../images/banner-sec-img.png');
+    background-position: left bottom;
+    background-repeat: no-repeat;
+    background-size: contain;
+}
+.banner-container{
+    display: flex;
+    max-width: var(--container-width);
+    align-items: center;
+    justify-content: center;
+    margin: var(--container-margin);
+}
+.banner-content{
+    width: 50%;
+}
+.banner-content h3{
+    font-weight: 600;
+    text-transform: uppercase;
+}
+.banner-content h1{
+    font-family: Work Sans;
+    font-size: 70px;
+    font-weight: 800;
+    text-transform: uppercase;
+    background: linear-gradient(180deg, #F948B2 0%, #8758F1 100%);
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+.banner-content .item-rules{
+    margin-left: 26px;
+}
+.banner-content .item-rules li{
+    color: var(--primary-text-color);
+    font-size: 20px;
+    font-weight: 500;
+    margin: 15px 0px;
+    text-transform: lowercase;
+}
+.banner-content .item-rules li:nth-child(1){
+    list-style-image: url('../images/banner-icon-1.svg');
+}
+.banner-content .item-rules li:nth-child(2){
+    list-style-image: url('../images/banner-icon-2.svg');
+}
+.banner-content .item-rules li:nth-child(3){
+    list-style-image: url('../images/banner-icon-3.svg');
+}
+.banner-content .btn-group{
+    margin-top: 20px;
+}
+.banner-img{
+    width: 50%;
+}
+.banner-img img{
+    width: 100%;
+}
 /* banner section end */
+/* online games start*/
+.games-funny-videos{
+    max-width: var(--container-width);
+    margin: var(--container-margin);
+    margin-top: 70px;
+    margin-bottom: 70px;
+    text-align: center;
+}
+.games-funny-videos h3{
+    font-weight: 700;
+}
+
+.games-funny-videos p{
+    margin-top: 15px;
+    margin-bottom: 40px;
+    color: var(--primary-text-color);
+} 
+
+.video-items{
+    display: flex;
+    gap: 20px;
+}
+.video-box{
+    width: 258px;
+}
+.video-box img{
+    width: 100%;
+}
+.video-box .video-caption{
+    font-size: 16px;
+    color: var(--primary-text-color);
+    text-align: left;
+}
+/* online game end */
