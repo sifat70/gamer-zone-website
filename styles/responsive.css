@@ -91,8 +91,13 @@
         margin-left: 0px;
         margin-right: 0px;
     }
-   .social-icon img{
+    .social-icon img{
         margin: 10px;
+    }
+    .social-icon{
+        display: grid;
+        margin-left: 30px;
+        grid-template-columns: repeat(3, 1fr);
     }
     .terms-and-condition-menu li a,.footer-container p{
         margin-top: 0px;
@@ -133,5 +138,13 @@
     .we-are-gamer-container{
         width: 100%;
         padding: 30px;
+    }
+
+    .games-funny-videos{
+        width: 80%;
+    }
+
+    .hero-section{
+        width: 90%;
     }
 }
